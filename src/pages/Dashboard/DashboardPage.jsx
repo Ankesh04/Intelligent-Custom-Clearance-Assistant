@@ -39,7 +39,7 @@ const UserDropdown = ({ user, onLogout }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="user-dropdown">
+    <div className="user-dropdown1">
       <img
         src={user.photoURL || "https://placehold.co/40x40"}
         alt="User"
