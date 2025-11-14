@@ -69,7 +69,7 @@ export default function Navbar() {
           </nav>
 
           {!user ? (
-            <div className="header-actions">
+            <div id="buton" className="header-actions">
               <button
                 className="btn-ghost"
                 onClick={() => handleNavigate("/login")}

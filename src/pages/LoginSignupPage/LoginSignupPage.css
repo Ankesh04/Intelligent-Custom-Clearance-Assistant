@@ -256,3 +256,62 @@
     }
 }
 
+/* ==========================================================================
+   RESPONSIVE LOGIN PAGE – MOBILE FIRST (No JSX Changes)
+   ========================================================================== */
+@media (max-width: 767px) {
+  .login-page-container {
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-card {
+    max-width: 100%;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -8px rgba(45, 58, 93, 0.15);
+  }
+
+  .visual-side {
+    display: none !important; /* Hidden on mobile */
+  }
+
+  .form-side {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+    gap: 1.25rem;
+  }
+
+  .form-title {
+    font-size: 1.75rem;
+  }
+
+  .form-subtitle {
+    font-size: 0.95rem;
+    margin-top: -0.5rem;
+  }
+
+  .input-group input,
+  .cta-button,
+  .social-login-btn {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .social-login-btn .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .toggle-view-text,
+  .trust-signal {
+    font-size: 0.8rem;
+  }
+}
