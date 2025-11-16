@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Customs Clearance Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="chat-container">
+        <h2>Intelligent Customs Clearance Assistant</h2>
+
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">👋 Hello! I can help you with customs clearance, document verification, and import/export queries.</div>
+        </div>
+
+        <div class="chat-controls">
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+            <div class="upload-mini">
+                <input type="file" id="fileInput" name="file" accept=".pdf,.docx,.jpg,.jpeg,.png" style="display:none;">
+                <button type="button" onclick="document.getElementById('fileInput').click()">📂 Upload</button>
+                <button type="button" onclick="uploadFile()">⬆️ Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Chat Function ---
+        function sendMessage() {
+            let userInput = document.getElementById("user-input").value.trim();
+            if (!userInput) return;
+
+            let chatBox = document.getElementById("chat-box");
+            let userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.innerText = userInput;
+            chatBox.appendChild(userMessage);
+
+            fetch("/get", {
+                method: "POST",
+                body: new URLSearchParams({ msg: userInput }),
+                headers: { "Content-Type": "application/x-www-form-urlencoded" }
+            })
+            .then(response => response.text())
+            .then(data => {
+                let botMessage = document.createElement("div");
+                botMessage.className = "bot-message";
+                botMessage.innerText = data;
+                chatBox.appendChild(botMessage);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            })
+            .catch(err => console.error("Error:", err));
+
+            document.getElementById("user-input").value = "";
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // Press Enter to send
+        document.getElementById("user-input").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") sendMessage();
+        });
+
+        // --- File Upload Function ---
+        function uploadFile() {
+            const fileInput = document.getElementById("fileInput");
+            if (!fileInput.files.length) {
+                alert("Please select a file!");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            let chatBox = document.getElementById("chat-box");
+            let uploadMsg = document.createElement("div");
+            uploadMsg.className = "bot-message";
+            uploadMsg.innerText = "📤 Processing your document...";
+            chatBox.appendChild(uploadMsg);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            fetch("/upload", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                let result = "";
+
+                if (data.error) {
+                    result = "❌ Error: " + data.error;
+                } else {
+                    result = 
+                        "✅ Verification Result:\n" + data.verification + "\n\n" +
+                        "📄 Document Analysis:\n" + data.analysis;
+                }
+
+                let botMessage = document.createElement("div");
+                botMessage.className = "bot-message";
+                botMessage.innerText = result;
+                chatBox.appendChild(botMessage);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            })
+            .catch(err => {
+                let botMessage = document.createElement("div");
+                botMessage.className = "bot-message";
+                botMessage.innerText = "❌ Error uploading: " + err;
+                chatBox.appendChild(botMessage);
+            });
+        }
+    </script>
+</body>
+</html>
