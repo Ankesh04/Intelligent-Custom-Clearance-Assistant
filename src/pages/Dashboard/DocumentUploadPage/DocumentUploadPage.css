@@ -62,6 +62,18 @@
 .pending .status {
   color: #d97706;
 }
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e11d48; /* red-600 */
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
 
 .check {
   color: var(--green);
