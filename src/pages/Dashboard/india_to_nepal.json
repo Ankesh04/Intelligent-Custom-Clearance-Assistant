@@ -1,0 +1,960 @@
+{
+  "india_to_nepal": {
+    "electronics": {
+      "category_description": "Consumer electronic devices, communication and computing equipment",
+      "items": [
+        {
+          "id": "mobile_phone",
+          "name": "Mobile Phone",
+          "hs_code": "8517.12",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 2,
+            "notes": "Preferential SAARC-India origin rate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Airway Bill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Warranty/Brand Certificate (if applicable)"
+          ]
+        },
+        {
+          "id": "laptop_computer",
+          "name": "Laptop Computer",
+          "hs_code": "8471.30",
+          "tax_breakdown": {
+            "import_duty_percent": 8,
+            "vat_percent": 13,
+            "other_charges_percent": 1,
+            "notes": "Lower duty for computing machines under SAARC origin"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Manufacturer’s Specification Sheet"
+          ]
+        },
+        {
+          "id": "tablet_device",
+          "name": "Tablet Device",
+          "hs_code": "8471.41",
+          "tax_breakdown": {
+            "import_duty_percent": 12,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Standard rate for tablets from India"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "television_led",
+          "name": "LED Television",
+          "hs_code": "8528.72",
+          "tax_breakdown": {
+            "import_duty_percent": 15,
+            "vat_percent": 13,
+            "other_charges_percent": 3,
+            "notes": "Consumer durable electronics often attract higher duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Technical Specification Sheet"
+          ]
+        },
+        {
+          "id": "smart_watch",
+          "name": "Smart Watch",
+          "hs_code": "8517.62",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 2,
+            "notes": "Wearable electronics"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "camera_dslr",
+          "name": "DSLR Camera",
+          "hs_code": "9006.10",
+          "tax_breakdown": {
+            "import_duty_percent": 14,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Photography equipment from India"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "refrigerator",
+          "name": "Refrigerator/Freezer",
+          "hs_code": "8418.10",
+          "tax_breakdown": {
+            "import_duty_percent": 20,
+            "vat_percent": 13,
+            "other_charges_percent": 4,
+            "notes": "Large household appliance, higher duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Energy Efficiency Certificate (if applicable)"
+          ]
+        },
+        {
+          "id": "washing_machine",
+          "name": "Washing Machine",
+          "hs_code": "8450.11",
+          "tax_breakdown": {
+            "import_duty_percent": 18,
+            "vat_percent": 13,
+            "other_charges_percent": 3,
+            "notes": "Appliance duty from India to Nepal"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Technical Specification Sheet"
+          ]
+        },
+        {
+          "id": "smartphone_parts",
+          "name": "Smartphone Spare Parts",
+          "hs_code": "8517.80",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Parts attract preferential duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order",
+            "Bill of Materials"
+          ]
+        },
+        {
+          "id": "earphones_wireless",
+          "name": "Wireless Earphones",
+          "hs_code": "8518.30",
+          "tax_breakdown": {
+            "import_duty_percent": 12,
+            "vat_percent": 13,
+            "other_charges_percent": 1,
+            "notes": "Audio accessories"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        }
+      ]
+    },
+    "food": {
+      "category_description": "Packaged and processed food items, non-perishable consumer foods",
+      "items": [
+        {
+          "id": "chocolates",
+          "name": "Chocolates",
+          "hs_code": "1806.31",
+          "tax_breakdown": {
+            "import_duty_percent": 30,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Processed confectionery enjoys ~30% duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Food Safety Certificate – India (FSSAI) or equivalent",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "canned_tuna",
+          "name": "Canned Tuna",
+          "hs_code": "1604.14",
+          "tax_breakdown": {
+            "import_duty_percent": 25,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Packaged seafood product duty estimate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "coffee_roasted",
+          "name": "Roasted Coffee Beans",
+          "hs_code": "0901.21",
+          "tax_breakdown": {
+            "import_duty_percent": 20,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Non-perishable beverage import"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Phytosanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "biscuits",
+          "name": "Biscuits & Cookies",
+          "hs_code": "1905.90",
+          "tax_breakdown": {
+            "import_duty_percent": 28,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Packaged bakery item"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "olive_oil",
+          "name": "Olive Oil (Edible)",
+          "hs_code": "1509.00",
+          "tax_breakdown": {
+            "import_duty_percent": 22,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Edible oil import duty estimate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "wheat_flour",
+          "name": "Refined Wheat Flour",
+          "hs_code": "1101.00",
+          "tax_breakdown": {
+            "import_duty_percent": 15,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Staple processed food item"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Phytosanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "sugar_solid",
+          "name": "Solid Refined Sugar",
+          "hs_code": "1701.99",
+          "tax_breakdown": {
+            "import_duty_percent": 18,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Refined sugar import estimate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "frozen_vegetables",
+          "name": "Frozen Mixed Vegetables",
+          "hs_code": "2004.10",
+          "tax_breakdown": {
+            "import_duty_percent": 25,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Frozen produce import duty estimate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Phytosanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "infant_formula",
+          "name": "Infant Formula Milk Powder",
+          "hs_code": "1901.10",
+          "tax_breakdown": {
+            "import_duty_percent": 30,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Infant nutrition import estimate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Health / Sanitary Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        }
+      ]
+    },
+    "textiles": {
+      "category_description": "Textile fabrics, garments, and accessories",
+      "items": [
+        {
+          "id": "cotton_shirts",
+          "name": "Cotton Shirts",
+          "hs_code": "6205.20",
+          "tax_breakdown": {
+            "import_duty_percent": 15,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Garments from India benefit from SAARC preferential"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Label & Marking Documentation",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "denim_jeans",
+          "name": "Denim Jeans",
+          "hs_code": "6203.42",
+          "tax_breakdown": {
+            "import_duty_percent": 18,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Jeans duty slightly higher"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Label & Marking Documentation",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "silk_scarves",
+          "name": "Silk Scarves",
+          "hs_code": "6214.10",
+          "tax_breakdown": {
+            "import_duty_percent": 20,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Luxury textile item"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Label & Marking Documentation",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "polyester_fabric",
+          "name": "Polyester Fabric",
+          "hs_code": "5512.20",
+          "tax_breakdown": {
+            "import_duty_percent": 12,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Fabric category, usually lower duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "cotton_fabric",
+          "name": "Cotton Fabric Woven",
+          "hs_code": "5209.59",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Raw fabric imports have lower duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "sports_t_shirts",
+          "name": "Sports T-Shirts",
+          "hs_code": "6109.10",
+          "tax_breakdown": {
+            "import_duty_percent": 17,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Activewear garment"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Label & Marking Documentation",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "women_dresses",
+          "name": "Women Dresses",
+          "hs_code": "6204.62",
+          "tax_breakdown": {
+            "import_duty_percent": 18,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "General garment import duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Label & Marking Documentation",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "bed_sheets_cotton",
+          "name": "Cotton Bed Sheets",
+          "hs_code": "6302.91",
+          "tax_breakdown": {
+            "import_duty_percent": 14,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Home textile item"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "footwear_knitted",
+          "name": "Knitted Footwear",
+          "hs_code": "6404.19",
+          "tax_breakdown": {
+            "import_duty_percent": 20,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Textile-related footwear"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        }
+      ]
+    },
+    "machinery": {
+      "category_description": "Industrial & construction machinery, power generation equipment, project-related imports",
+      "items": [
+        {
+          "id": "construction_excavator",
+          "name": "Construction Excavator",
+          "hs_code": "8429.52",
+          "tax_breakdown": {
+            "import_duty_percent": 5,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Machinery – basic infrastructure falls into lower duty bracket (~5 %) per Nepal’s tariff guide. :contentReference[oaicite:1]{index=1}"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Installation/Operation Manual",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "electric_generator",
+          "name": "Electric Generator",
+          "hs_code": "8502.31",
+          "tax_breakdown": {
+            "import_duty_percent": 7,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Power generation equipment from India"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "telecom_switchgear",
+          "name": "Telecom Switchgear",
+          "hs_code": "8517.62",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Telecommunications equipment"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "industrial_lift",
+          "name": "Industrial Lift/Elevator",
+          "hs_code": "8428.20",
+          "tax_breakdown": {
+            "import_duty_percent": 8,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Lift/hoist equipment"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "tractor_agri",
+          "name": "Tractor for Agriculture",
+          "hs_code": "8701.90",
+          "tax_breakdown": {
+            "import_duty_percent": 6,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Agricultural machinery – basic need machinery"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "packaging_machine",
+          "name": "Packaging Machine",
+          "hs_code": "8422.30",
+          "tax_breakdown": {
+            "import_duty_percent": 9,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Industrial equipment for packaging"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Installation Manual",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "diesel_generator",
+          "name": "Diesel Generator Set",
+          "hs_code": "8502.12",
+          "tax_breakdown": {
+            "import_duty_percent": 10,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Stand-by power generator"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "construction_crane",
+          "name": "Construction Crane",
+          "hs_code": "8426.12",
+          "tax_breakdown": {
+            "import_duty_percent": 7,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Heavy machinery for construction"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "solar_panel_array",
+          "name": "Solar Panel Array",
+          "hs_code": "8541.40",
+          "tax_breakdown": {
+            "import_duty_percent": 5,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Renewable energy equipment – low duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Bill of Lading/Waybill",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Delivery Order"
+          ]
+        }
+      ]
+    },
+    "pharmaceuticals": {
+      "category_description": "Medicaments, active pharmaceutical ingredients, health-care imports",
+      "items": [
+        {
+          "id": "antibiotic_tablets",
+          "name": "Antibiotic Tablets",
+          "hs_code": "3004.20",
+          "tax_breakdown": {
+            "import_duty_percent": 14,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Medicaments with mixed constituents – within SAARC duty ~14% per tariff data. :contentReference[oaicite:2]{index=2}"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "Certificate of Free Sale / GMP – India manufacturer",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "insulin_preparation",
+          "name": "Insulin Preparation",
+          "hs_code": "3004.90",
+          "tax_breakdown": {
+            "import_duty_percent": 12,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Specialised medicine"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "Certificate of Free Sale / GMP – India manufacturer",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "vaccines",
+          "name": "Vaccines",
+          "hs_code": "3002.20",
+          "tax_breakdown": {
+            "import_duty_percent": 0,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Vaccines may be duty-exempt under health policy"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "WHO-prequalification Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "generic_paracetamol",
+          "name": "Generic Paracetamol Tablets",
+          "hs_code": "3004.90",
+          "tax_breakdown": {
+            "import_duty_percent": 14,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Common OTC medicine rate"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "Certificate of Free Sale / GMP – India manufacturer",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "medical_devices_xray",
+          "name": "X-Ray Imaging Device",
+          "hs_code": "9018.12",
+          "tax_breakdown": {
+            "import_duty_percent": 5,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Medical equipment may fall into low duty bracket"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Medical Device Import Permit – Nepal",
+            "Certificate of Origin",
+            "Manufacturer’s Specification Sheet",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "herbal_medicament",
+          "name": "Herbal Medicament (Homeopathic)",
+          "hs_code": "3006.10",
+          "tax_breakdown": {
+            "import_duty_percent": 9,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Homeopathic medicaments duty ~9% for SAARC origin. :contentReference[oaicite:3]{index=3}"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "Certificate of Origin",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "vitamin_supplements",
+          "name": "Vitamin & Mineral Supplements",
+          "hs_code": "3004.50",
+          "tax_breakdown": {
+            "import_duty_percent": 16,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Nutritional supplement category"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Pharmaceutical Import Licence – Nepal",
+            "Certificate of Free Sale – India manufacturer",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Certificate of Origin",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "surgical_gloves",
+          "name": "Disposable Surgical Gloves",
+          "hs_code": "4015.19",
+          "tax_breakdown": {
+            "import_duty_percent": 8,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "Medical consumables – lower duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Medical Device Import Permit – Nepal",
+            "Certificate of Origin",
+            "Technical Specification Sheet",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        },
+        {
+          "id": "diagnostic_test_kit",
+          "name": "Diagnostic Test Kit",
+          "hs_code": "3822.00",
+          "tax_breakdown": {
+            "import_duty_percent": 5,
+            "vat_percent": 13,
+            "other_charges_percent": 0,
+            "notes": "COVID-19 era concessions, very low duty"
+          },
+          "required_documents": [
+            "Commercial Invoice",
+            "Packing List",
+            "Medical Device Import Permit – Nepal",
+            "Certificate of Origin",
+            "WHO-prequalification Certificate",
+            "Import Entry Form – Nepal Customs",
+            "Tax Identification Number (PAN/VAT) – Nepal",
+            "Delivery Order"
+          ]
+        }
+      ]
+    }
+  }
+}

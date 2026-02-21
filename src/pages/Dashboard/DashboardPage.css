@@ -1,0 +1,15 @@
+.main1 {
+  margin-left: 260px;
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  height: 100vh;
+  background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .main1 {
+    margin-left: 0;
+    padding-top: 4rem;
+  }
+}

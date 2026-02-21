@@ -1,0 +1,223 @@
+/* src/components/Sidebar/Sidebar.css */
+:root {
+  --green: #10b981;
+  --blue: #2563eb;
+  --gray-700: #374151;
+  --gray-300: #d1d5db;
+  --shadow: 0 4px 20px rgba(0,0,0,0.1);
+  --transition: all 0.25s ease;
+}
+
+/* ── Brand Logo (Top) ─────────────────────────────── */
+.logo1 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.logo-circle1 {
+  width: 38px;
+  height: 38px;
+  background: var(--blue);
+  border-radius: 50% ; /* Oval shape: wider than tall */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.logo-text1 {
+  white-space: nowrap;
+}
+
+/* ── Icon ─────────────────────────────────────────── */
+.icon1 {
+  width: 20px;
+  height: 20px;
+}
+
+/* ── Nav Item ─────────────────────────────────────── */
+.nav-item1 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-item1:hover,
+.nav-item1.active1 {
+  background: #f0fdf4;
+  color: var(--green);
+}
+
+/* ── User Section – VERTICAL LAYOUT ────────────────── */
+/* Logo → Name → Email → Logout (one per line) */
+.user-section1 {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.avatar1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-details1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+.user-details1 strong {
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-details1 small {
+  color: #6b7280;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout-btn1 {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.logout-btn1:hover {
+  background: #dc2626;
+}
+
+/* ── Desktop Sidebar ──────────────────────────────── */
+.sidebar1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.sidebar-top1 {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--gray-300);
+  flex-shrink: 0;
+}
+
+.nav1 {
+  flex: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+/* ── Mobile Hamburger Menu ────────────────────────── */
+.hamburger-menu1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.hamburger-btn1 {
+  background: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border-radius: 0 0 0.5rem 0;
+}
+
+.menu-content1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu1.open1 .menu-content1 {
+  transform: translateX(0);
+}
+
+.menu-header1 {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--gray-300);
+  
+}
+/* Desktop: Smooth entrance */
+.sidebar1 {
+  animation: slideInLeft 0.4s ease-out forwards;
+}
+
+/* Mobile: Content fade-in after drawer opens */
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .hamburger-menu1 {
+    display: block;
+  }
+
+  .sidebar1 {
+    display: none;
+  }
+
+  /* Mobile menu: keep vertical user section */
+  .menu-content1 .user-section1 {
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+  }
+  .hamburger-menu1.open1 .menu-content1 > * {
+  animation: fadeIn 0.3s ease-out 0.1s both;
+}
+
+  .menu-content1 .logout-btn1 {
+    width: 100%;
+  }
+}

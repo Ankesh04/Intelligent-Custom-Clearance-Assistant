@@ -1,0 +1,361 @@
+/* Navbar.css - Fixed Dropdown, Stable Button, Emerald + Blue Theme */
+
+:root {
+  --green: #10b981;
+  --green-dark: #059669;
+  --blue: #2563eb;
+  --white: #ffffff;
+  --gray-700: #374151;
+  --gray-300: #d1d5db;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease;
+}
+
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-300);
+  box-shadow: var(--shadow);
+}
+
+.header-container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space */
+  position: static; /* ← Important */
+}
+
+
+
+/* Logo */
+.logo{
+  margin: 18px;
+}
+.logo-link {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  background: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.logo-text {
+  font-size: 1.95rem;
+  font-weight: 1200;
+  color: var(--blue);
+}
+.logo-link:hover .logo-icon-wrapper {
+  /* background: #059669; */
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6), 0 0 20px rgba(16, 185, 129, 0.4);
+  transform: scale(01.02);
+
+}
+
+/* Nav */
+.header-nav {
+  display: flex;
+  
+  gap: 2rem;
+}
+
+
+.header-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+.header-nav a {
+  color: var(--gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.header-nav a:hover {
+  color: var(--green);
+}
+
+/* Buttons */
+#buton{
+  left:300px;
+  position:relative;
+}
+.btn-ghost, .btn-accent {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-ghost {
+  border: 1px solid var(--gray-300);
+  background: transparent;
+  color: var(--gray-700);
+  
+}
+
+.btn-ghost:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.btn-accent {
+  background: var(--accent-green);
+  color: var(--white);
+  border: none;
+}
+
+.btn-accent:hover {
+  background: var(--green-dark);
+}
+
+/* === USER AVATAR & DROPDOWN (FIXED BELOW NAVBAR) === */
+/* === USER MENU - STABLE, CLEAN, TEXT FALLBACK === */
+.user-menu {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.avatar-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: border-color 0.25s;
+}
+
+.avatar-text {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2563eb;           /* Blue background */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline;
+  position:fixed;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  transition: background 0.25s;
+}
+
+.avatar-btn:hover .avatar-img,
+.avatar-btn:hover .avatar-text {
+  border-color: #10b981;         /* Green on hover */
+}
+
+/* DROPDOWN BELOW NAVBAR */
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+  left:400px;
+}
+.user-dropdown {
+  position: absolute;
+  top: 90px;
+  right: 140px;
+  width: 200px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 0.75rem;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.user-name {
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: #374151;
+}
+
+.user-email {
+  font-size: 0.875rem;
+  color: #374151;
+  margin: 0 0 0.75rem;
+}
+
+.logout-btn {
+  width: 100%;
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #059669;
+}
+
+/* Mobile */
+/* === RESPONSIVE: MOBILE MENU & LAYOUT === */
+.desktop-nav {
+  display:flex;
+  align-items: center;
+  /* gap: 2rem; */
+  padding-left:150px;
+  
+}
+
+.menu-toggle {
+  display: none;
+  position:relative;
+  background: none;
+  border: none;
+  left:80px;
+  font-size: 1.75rem;
+  color: var(--gray-700);
+  cursor: pointer;
+}
+
+.mobile-menu {  
+  position: relative;
+  top: 225px;
+  left: -120px;
+  /* right: 15px; */
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(2px);
+  border-bottom: 1px solid var(--gray-300);
+  border-radius:5%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  z-index: 49;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu a {
+  color: var(--gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.mobile-menu a:hover {
+  color: varvar(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.mobile-btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Mobile User Section */
+.mobile-user-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--gray-300);
+}
+
+.mobile-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.mobile-avatar .avatar-img,
+.mobile-avatar .avatar-text {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+}
+
+.mobile-user-name {
+  font-weight: 600;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+.mobile-user-email {
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  margin: 0 0 0.75rem;
+}
+
+.mobile-logout {
+  width: 100%;
+}
+
+/* === BREAKPOINT: Mobile First === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  /* Dropdown full width on mobile */
+  .user-dropdown {
+    right: 0.5rem;
+    left: 0.5rem;
+    width: auto;
+    max-width: none;
+  }
+}

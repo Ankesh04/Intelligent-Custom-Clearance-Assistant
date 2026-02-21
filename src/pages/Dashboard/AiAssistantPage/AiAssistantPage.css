@@ -1,0 +1,314 @@
+/* src/pages/Dashboard/AiAssistantPage/AiAssistantPage.css */
+
+:root {
+  --green: #10b981;
+  --blue: #2563eb;
+  --gray: #6b7280;
+  --light: #f9fafb;
+  --border: #e5e7eb;
+  --ai-bg: #f0fdf4;
+  --user-bg: #dbeafe;
+}
+
+/* Chat Container */
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+  /* gap: 1.5rem; */
+  height: calc(100vh - 10rem);
+}
+
+.main1{
+  height: 93.5vh;
+}
+/* Messages */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #f0fdf4;
+  padding: 0.5rem 0;
+}
+
+.bubble {
+  max-width: 80%;
+  margin: 0.25rem 0;
+}
+
+.bubble.ai {
+  align-self: flex-start;
+}
+
+.bubble.user {
+  align-self: flex-end;
+}
+
+.bubble-inner {
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background: var(--ai-bg);
+  border: 1px solid var[--border];
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.bubble.user .bubble-inner {
+  background: var(--user-bg);
+  color: #1e40af;
+}
+
+.bubble p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+/* Suggestions */
+.chat-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.suggestion {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--blue);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestion:hover {
+  background: #f0f9ff;
+  border-color: var(--blue);
+  transform: translateY(-1px);
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.send-btn {
+  background: var(--green);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.send-btn:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+.send-btn .icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Disclaimer */
+.disclaimer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--gray);
+  margin-top: 1rem;
+}
+.chat-input {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left:auto;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-wrapper input[type="text"] {
+  flex: 1;
+  min-width: 660px; /* Prevents overflow */
+}
+
+.file-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e3f2fd;
+  border: 1px solid #2196f3;
+  border-radius: 16px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.file-chip span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.remove-file {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  margin-left: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.remove-file:hover {
+  background: #f44336;
+  color: white;
+}
+
+.input-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.file-upload-btn:hover {
+  background: #f0f0f0;
+  border-color: #007bff;
+}
+
+.file-upload-btn svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.bubble .file-info {
+  display: block;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.clear-history-btn {
+  background: #ef4444; 
+  color: white; 
+  padding: 0.5rem;
+   border: none; 
+   border-radius: 4px; 
+   cursor: pointer;} 
+  
+  .input-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    min-width:780px;
+  flex: 1; 
+}
+/* Responsive: Stack actions on small screens if needed */
+@media (max-width: 600px) {
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chat-container {
+    height: calc(100vh - 10rem);
+    padding: 0.5rem;
+  }
+
+  .bubble {
+    max-width: 90%;
+  }
+
+  .suggestion {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .chat-input {
+    padding: 0.5rem;
+  }
+
+  .chat-input input {
+    font-size: 0.95rem;
+  }
+  .input-actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .chat-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .input-row{
+    min-width:90px;
+  }
+
+  .input-actions {
+    justify-content: flex-end;
+  }
+}

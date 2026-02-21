@@ -1,0 +1,276 @@
+/* src/pages/Dashboard/DocumentUploadPage/DocumentUploadPage.css */
+
+:root {
+  --green: #10b981;
+  --red: #ef4444;
+  --blue: #2563eb;
+  --gray: #6b7280;
+  --light: #f3f4f6;
+  --border: #e5e7eb;
+}
+
+/* Document Status */
+.doc-status-section {
+  margin-bottom: 2rem;
+}
+
+.doc-status-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.doc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: white;
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.doc-item.verified {
+  border-left: 4px solid var(--green);
+}
+
+.doc-item.pending {
+  border-left: 4px solid #fbbf24;
+  color: var(--gray);
+}
+
+.doc-name {
+  flex: 1;
+}
+
+.status {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.verified .status {
+  color: var(--green);
+}
+
+.pending .status {
+  color: #d97706;
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e11d48; /* red-600 */
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  color: var(--green);
+  width: 20px;
+  height: 20px;
+}
+
+.pending-icon {
+  color: #d97706;
+  width: 18px;
+  height: 18px;
+}
+
+/* Upload Section */
+.upload-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drop-zone.dragging {
+  border-color: var(--green);
+  background: #f0fdf4;
+}
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+
+.drop-text {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.or-text {
+  color: var(--gray);
+  margin: 0.5rem 0;
+}
+
+.btn-browse {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.paste-text {
+  margin-top: 0.5rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* File Preview */
+.file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.file-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--blue);
+}
+
+.file-name {
+  margin: 0;
+  font-weight: 500;
+}
+
+.file-size {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+.btn-remove {
+  background: var(--red);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* Upload Button */
+.btn-upload {
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.btn-upload:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Info Box */
+.info-box {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #eff6ff;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  color: #1d4ed8;
+  text-align: center;
+}
+
+/* Floating AI Button (reuse from Dashboard) */
+.floating-ai1 {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.floating-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.floating-btn1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(16, 185, 129, 0.4);
+}
+
+.floating-btn1 .icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main1 {
+    padding-top: 5rem;
+  }
+
+  .doc-item {
+    font-size: 0.9rem;
+  }
+
+  .drop-zone {
+    padding: 1.5rem;
+  }
+
+  .floating-ai1 {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .floating-btn1 {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}

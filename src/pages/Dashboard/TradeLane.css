@@ -1,0 +1,345 @@
+/* TradeLane – Simple & Clean */
+.trade-lanes-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.trade-lanes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.trade-lane-item {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 160px;
+  transition: 0.2s;
+}
+
+.trade-lane-item:hover,
+.trade-lane-item.selected {
+  border-color: var(--green);
+  background: var(--green-light);
+}
+
+.lane-route { font-weight: 600; }
+.lane-category { font-size: 0.9rem; color: #6b7280; margin-top: 0.25rem; }
+
+.empty { color: #9ca3af; font-style: italic; }
+
+.checklist h3 { margin: 1.5rem 0 1rem; font-size: 1.4rem; }
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.doc-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.doc-card h4 { margin-bottom: 0.5rem; font-size: 1.1rem; }
+.doc-card p { color: #6b7280; margin-bottom: 1rem; font-size: 0.95rem; }
+.doc-actions { display: flex; gap: 0.75rem; }
+
+.btn-outline {
+  border: 1px solid var(--border);
+  background: white;
+  color: #4b5563;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.wizard {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.wizard-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.step {
+  width: 36px;
+  height: 36px;
+  background: #e5e7eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step.active { background: var(--green); }
+.line { flex: 1; height: 2px; background: #e5e7eb; }
+
+.wizard h3 { text-align: center; margin-bottom: 1.5rem; font-size: 1.3rem; }
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.select-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.dropdown { position: relative; }
+.dropdown-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 0.5rem;
+  background: white;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover { border-color: var(--green); }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1.5px solid var(--green);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  max-height: 240px;
+  overflow: auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.dropdown-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-item:hover { background: var(--green-light); }
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: var(--green-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h3 { margin: 0; font-size: 1.2rem; }
+.close-btn { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #6b7280; }
+
+.modal-body { padding: 1.5rem; line-height: 1.6; }
+.modal-footer {
+  padding: 1rem 1.5rem;
+  text-align: right;
+  background: #f9fafb;
+  border-top: 1px solid var(--border);
+}
+
+.modal-footer small { color: #9ca3af; }
+/* Items Grid */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.item-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.item-card h4 {
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+}
+
+.hs-code {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.tax-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.tax-breakdown span {
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.tax-breakdown strong {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.docs-details {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.docs-details summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.docs-details ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.docs-details li {
+  margin: 0.25rem 0;
+  color: #4b5563;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+}
+
+.coming-soon h3 {
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+/* Trade Lane Item with Remove */
+.trade-lane-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.trade-lane-item:hover {
+  border-color: #10b981;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+}
+
+.trade-lane-item.selected {
+  border-color: #10b981;
+  background: #f0fdf4;
+  font-weight: 500;
+}
+
+.lane-content {
+  flex: 1;
+}
+
+.lane-route {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.lane-category {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.remove-btn:hover {
+  opacity: 1;
+}
+
+.remove-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

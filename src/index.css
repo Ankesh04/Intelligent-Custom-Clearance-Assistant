@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Import Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Open+Sans:wght@400&display=swap');
+
+/* --- Define Global CSS Variables (Color Palette) --- */
+:root {
+  --primary: #2D3A5D;
+  --accent: #4CAF50;
+  --text-primary: #1A1A1A;
+  --text-secondary: #667085;
+  --bg-main-start: #F0F4F8;
+  --bg-main-end: #EBF1F6;
+}
+
+/* --- Apply Base Styles to the Entire App --- */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-main-start);
+  background-image: linear-gradient(180deg, var(--bg-main-start) 0%, var(--bg-main-end) 100%);
+  color: var(--text-primary);
+}
+
+/* --- Set Default Heading Font --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+}
+
