@@ -92,7 +92,6 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Firebase
-firebaseConfig.js
 
 # =========================================================
 # IDE / EDITORS
