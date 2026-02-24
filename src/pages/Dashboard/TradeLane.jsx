@@ -5,7 +5,7 @@ import { db } from "../../firebaseConfig";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 import Sidebar from "../../components/layout/Sidebar";
 import indiaToNepalData from "./india_to_nepal.json";
-import "./Tradelane.css"; // Keep your wizard styles
+import "./TradeLane.css"; // Keep your wizard styles
 // import "../../pages/Dashboard/DashboardPage.css"; 
 
 // ── Icons ─────────────────────────────────────
