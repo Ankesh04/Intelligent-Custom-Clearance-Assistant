@@ -8,6 +8,7 @@ import LoginSignupPage from "./pages/LoginSignupPage/LoginSignupPage.jsx";
 import DocumentUploadPage from "./pages/Dashboard/DocumentUploadPage/DocumentUploadPage.jsx"; // Correct path
 import AiAssistantPage from "./pages/Dashboard/AiAssistantPage/AiAssistantPage.jsx";
 import TradeLane from "./pages/Dashboard/TradeLane.jsx";
+import MultiAgentPage from "./pages/Dashboard/MultiAgentPage/MultiAgentPage.jsx";
 import "./index.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path="/tradelane" element={<TradeLane />} />
       <Route path="/ai-assistant" element={<AiAssistantPage />} />
       <Route path="/dashboard/documents" element={<DocumentUploadPage />} />
+      <Route path="/multi-agent" element={<MultiAgentPage />} />
     </Routes>
   );
 }
