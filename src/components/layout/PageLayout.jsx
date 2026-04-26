@@ -118,8 +118,8 @@ export default function PageLayout() {
               style={{ animationDelay: "0.5s" }}
             >
               <img
-                src="/src/assets/images/login-background.png"
-                alt="Trucks at a shipping port"
+                src="/login-background.png"
+                alt="ICCA Image"
                 className="hero-image"
               />
             </div>
